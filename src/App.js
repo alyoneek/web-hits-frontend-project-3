@@ -2,14 +2,14 @@ import React from 'react';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
-    <div className="d-flex vh-100 flex-column">
+    <div className="d-flex flex-column vh-100">
       <Navbar />
-      <div className="container flex-grow-1">
-        <LoginPage />
+      <div className="container flex-grow-1 py-5">
+        <RegisterPage />
       </div>
       <Footer />
     </div>
