@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Navbar = () => {
+  console.log('nav');
   return (
     <nav class="navbar navbar-expand-lg navbar-light shadow">
       <div class="container-fluid mx-4">
