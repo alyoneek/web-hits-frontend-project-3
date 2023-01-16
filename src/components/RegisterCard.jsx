@@ -2,31 +2,41 @@ import React from 'react';
 
 const RegisterCard = () => {
   return (
-    <div class="card w-50 shadow" style={{ height: 'fit-content' }}>
-      <div class="card-body p-4">
-        <h1 class="mb-4">Регистрация</h1>
+    <div className="card w-50 shadow" style={{ height: 'fit-content' }}>
+      <div className="card-body p-4">
+        <h1 className="mb-4">Регистрация</h1>
 
-        <div class="form-outline mb-4">
-          <label class="form-label" for="fullName">
+        <div className="form-outline mb-4">
+          <label className="form-label" for="fullName">
             ФИО
           </label>
-          <input type="text" name="fullName" id="fullName" class="form-control form-control-lg" />
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            className="form-control form-control-lg"
+          />
         </div>
 
-        <div class="mb-4">
-          <label class="form-label" for="birthDate">
+        <div className="mb-4">
+          <label className="form-label" for="birthDate">
             Дата рождения
           </label>
-          <input type="date" name="birthDate" id="birthDate" class="form-control form-control-lg" />
+          <input
+            type="date"
+            name="birthDate"
+            id="birthDate"
+            className="form-control form-control-lg"
+          />
         </div>
 
-        <div class="mb-4">
-          <label class="form-label" for="gender">
+        <div className="mb-4">
+          <label className="form-label" for="gender">
             Пол
           </label>
           <select
             id="gender"
-            class="form-select form-select-lg"
+            className="form-select form-select-lg"
             aria-label="Default select example">
             <option value="Male" selected>
               Мужской
@@ -35,8 +45,8 @@ const RegisterCard = () => {
           </select>
         </div>
 
-        <div class="mb-4">
-          <label class="form-label" for="phoneNumber">
+        <div className="mb-4">
+          <label className="form-label" for="phoneNumber">
             Телефон
           </label>
           <input
@@ -44,26 +54,26 @@ const RegisterCard = () => {
             placeholder="+7 (xxx) xxx-xx-xx"
             name="phoneNumber"
             id="phoneNumber"
-            class="form-control form-control-lg"
+            className="form-control form-control-lg"
           />
         </div>
 
-        <div class="mb-4">
-          <label class="form-label" for="email">
+        <div className="mb-4">
+          <label className="form-label" for="email">
             Email
           </label>
-          <input type="email" name="email" id="email" class="form-control form-control-lg" />
+          <input type="email" name="email" id="email" className="form-control form-control-lg" />
         </div>
 
-        <div class="mb-4">
-          <label class="form-label" for="password">
+        <div className="mb-4">
+          <label className="form-label" for="password">
             Пароль
           </label>
-          <input name="password" id="password" class="form-control form-control-lg" />
+          <input name="password" id="password" className="form-control form-control-lg" />
         </div>
 
-        <div class="d-grid gap-2">
-          <button class="btn btn-primary btn-lg mb-1" type="submit">
+        <div className="d-grid gap-2">
+          <button className="btn btn-primary btn-lg mb-1" type="submit">
             Зарегистрироваться
           </button>
         </div>
