@@ -1,0 +1,27 @@
+.readMore {
+  &:global(.collapsed) {
+    &:after {
+      content: 'Читать полностью';
+    }
+  }
+
+  &:not(:global(.collapsed)) {
+    &:after {
+      content: 'Свернуть';
+    }
+  }
+}
+
+.description {
+  &:global(.collapse) {
+    &:not(:global(.show)) {
+      display: block;
+      height: 4.5em;
+      overflow: hidden;
+    }
+
+    &:global(.collapsing) {
+      height: 4.5em;
+    }
+  }
+}
